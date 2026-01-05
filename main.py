@@ -5,7 +5,7 @@ from skimage.filters import median
 from skimage.morphology import ball
 from image_utils import load_image, edge_detection
 
-image_path = 'your_image.jpg' 
+image_path = "IMG_9220.CR2" 
 image = load_image(image_path)
 clean_image = median(image, ball(3))
 edgeMAG = edge_detection(clean_image)
